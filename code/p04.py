@@ -1,11 +1,14 @@
 #!/usr/bin/env python
+"""find all the path, that sum of all the elements are equals to input value"""
 class Node:
     def __init__(self,value):
         self.value = value
         self.left = None
         self.right = None
 
+
 class Tree:
+
     def __init__(self):
         print "A tree created"
         self.root = None
@@ -68,16 +71,16 @@ class Tree:
             self.path.append(list(the_path))
         the_path.pop()
 
-
-tree = Tree()
-tree.insert_node(Node(10))
-tree.insert_node(Node(5))
-tree.insert_node(Node(12))
-tree.insert_node(Node(4))
-tree.insert_node(Node(7))
-tree.print_post_order()
-print ""
-tree.print_mid_order()
-print ""
-tree.find_path(22)
-print tree.path
+if __name__ == '__main__':
+    tree = Tree()
+    tree.insert_node(Node(10))
+    tree.insert_node(Node(5))
+    tree.insert_node(Node(12))
+    tree.insert_node(Node(4))
+    tree.insert_node(Node(7))
+    tree.print_post_order()
+    print ""
+    tree.print_mid_order()
+    print ""
+    tree.find_path(22)
+    print tree.path

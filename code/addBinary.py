@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-def addBinary(a, b):
+#add two string binary, print out the binary as a string
+def addBinary(a, b):#dumm implement
     result = ""
     lbit = a
     sbit = b
@@ -56,6 +57,7 @@ def add_bit_ca(b1,b2,carry):
     else:
         return add_bit(b1,b2)
 
+#bit better implement
 def add_binary(a, b):
     result = ""
     lbit = a
@@ -94,9 +96,9 @@ def add_binary(a, b):
         result = lls.pop() + result
     return result
 
-
-a_str = "01111"
-b_str = "10011"
-print a_str,b_str
-print addBinary(a_str, b_str)
-print add_binary(a_str, b_str)
+if __name__ == '__main__':
+    a_str = "01111"
+    b_str = "10011"
+    print a_str,b_str
+    print addBinary(a_str, b_str)
+    print add_binary(a_str, b_str)

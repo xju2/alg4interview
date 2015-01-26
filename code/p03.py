@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#Maximum contiguous subseqence sum algorithm
+"""Maximum contiguous subseqence sum algorithm"""
 
 #devide-and-conquer
 def max_sub_sum1(array):
@@ -25,7 +25,6 @@ def max_sum_dac(array, left, right):
             acrossBorderSum = 0
         if acrossBorderSum > maxAcrossBorderSum:
             maxAcrossBorderSum = acrossBorderSum 
-
     return max(maxLeftSum, maxRightSum, maxAcrossBorderSum)
 
 def max_sub_sum2(array):
@@ -37,9 +36,9 @@ def max_sub_sum2(array):
             theSum = 0
         if theSum > theMaxSum:
             theMaxSum = theSum
-
     return theMaxSum
 
-a=[-2, 11, -4, 13, -5, -2]
-print max_sub_sum1(a)
-print max_sub_sum2(a)
+if __name__ == '__main__':
+    a=[-2, 11, -4, 13, -5, -2]
+    print max_sub_sum1(a)
+    print max_sub_sum2(a)
