@@ -21,8 +21,9 @@ def find_number(l, n):
     if flag:
         return (si, ei, l[si], l[ei], n)
 
-tp = find_number([1,3,5,7,9,12,14,18,23,34,45,56,67,78,89,90,100,101,120,130], 115)
-if tp:
-    print 'n=l[%s]+l[%s]=%s+%s=%s' % tp
-else:
-    print 'fail to find the match number'
+if __name__=='__main__':
+    tp = find_number([1,3,5,7,9,12,14,18,23,34,45,56,67,78,89,90,100,101,120,130], 115)
+    if tp:
+        print 'n=l[%s]+l[%s]=%s+%s=%s' % tp
+    else:
+        print 'fail to find the match number'

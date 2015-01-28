@@ -1,5 +1,9 @@
 # reverse sentence on word
-s = 'Hi, i am a student.'
-s_list = s.split(' ')
-s_list.reverse()
-print ' '.join(s_list)
+def reverse_by(s, delimeter):
+    s_list = s.split(delimeter)
+    s_list.reverse()
+    return delimeter.join(s_list)
+
+if __name__=='__main__':
+    s = 'Hi, i am a student.'
+    print reverse_by(s, ' ')
